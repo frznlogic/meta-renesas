@@ -8,7 +8,10 @@ BRANCH = "v2015.04/rcar-3.5.3"
 
 LIC_FILES_CHKSUM = "file://Licenses/README;md5=c7383a594871c03da76b3707929d2919"
 
-SRC_URI = "${UBOOT_URL};branch=${BRANCH}"
+SRC_URI = " \
+    ${UBOOT_URL};branch=${BRANCH} \
+    file://0001-add-gcc6-support.patch \
+"
 SRCREV = "058edfcb95d8d1b58403bbe81e0507924b4b2fb8"
 
 PV = "v2015.04+git${SRCPV}"
